@@ -1,0 +1,30 @@
+{
+  "name": "@creit-tech/stellar-sep-0040",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./main.ts",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.15",
+    "@std/testing": "jsr:@std/testing@^1.0.16",
+    "@stellar/stellar-sdk": "npm:@stellar/stellar-sdk@^14.3.0"
+  },
+  "fmt": {
+    "lineWidth": 120
+  },
+  "lint": {
+    "rules": {
+      "tags": [
+        "recommended",
+        "jsr"
+      ],
+      "include": [
+        "camelcase",
+        "no-sync-fn-in-async-fn",
+        "single-var-declarator"
+      ],
+      "exclude": [
+        "require-await"
+      ]
+    }
+  }
+}
